@@ -1,4 +1,4 @@
-import Home from '../components/HelloFromVux'
+import Home from '../views/components/HelloFromVux'
 
 const routers = [
   {
