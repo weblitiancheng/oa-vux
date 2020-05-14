@@ -1,0 +1,23 @@
+import Home from '../components/HelloFromVux'
+
+const routers = [
+  {
+    path: '/',
+    meta: {
+      title: 'file_management',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: Home
+  },
+  {
+    path: '/hello',
+    meta: {
+      title: 'gantt',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/components/HelloWorld'], resolve)
+  }
+]
+export default routers
