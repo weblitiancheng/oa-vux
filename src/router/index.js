@@ -17,7 +17,7 @@ const routers = [
       keepAlive: true,
       isLogin: true
     },
-    component: (resolve) => require(['@/components/HelloWorld'], resolve)
+    component: (resolve) => require(['@/views/components/HelloWorld'], resolve)
   }
 ]
 export default routers
