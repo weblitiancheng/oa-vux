@@ -8,6 +8,7 @@ import Routers from './router'
 import Util from './libs/util'
 import {AjaxPlugin, WechatPlugin} from 'vux'
 import 'es6-promise/auto'
+import 'lib-flexible/flexible.js'
 
 Vue.use(VueRouter)
 Vue.use(WechatPlugin)
