@@ -5,8 +5,9 @@
       <h1> </h1>
     </div>
     <group title="cell demo">
-      <cell title="VUX" value="cool" is-link></cell>
+      <router-link to="/appr"><cell title="VUX" value="cool" is-link></cell></router-link>
     </group>
+
   </div>
 </template>
 

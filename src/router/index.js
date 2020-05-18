@@ -4,7 +4,13 @@ const routers = [
   {
     path: '/',
     meta: {
-      title: 'file_management',
+import Home from '../views/components/HelloFromVux'
+
+const routers = [
+  {
+    path: '/',
+    meta: {
+      title: 'demo',
       keepAlive: true,
       isLogin: true
     },
@@ -13,11 +19,20 @@ const routers = [
   {
     path: '/hello',
     meta: {
-      title: 'gantt',
+      title: 'HelloWorld',
       keepAlive: true,
       isLogin: true
     },
     component: (resolve) => require(['@/views/components/HelloWorld'], resolve)
+  },
+  {
+    path: '/appr',
+    meta: {
+      title: '审批',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/appr'], resolve)
   },
   {
     path: '/msg',
