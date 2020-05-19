@@ -9,27 +9,11 @@
         </div>
         <p class="line"></p>
         <flexbox orient="vertical" :gutter="0">
-            <flexbox-item>
+            <flexbox-item v-for="(my_data,index) of myData" :key="my_data.my_txt">
                 <div class="my_lie">
-                    <img src="../assets/pic8.png" class="pic8">
+                    <img :src="my_data.my_img" class="pic8">
                     <div class="my_lieRight">
-                    <p>我审批的</p>
-                    </div>
-                </div>
-            </flexbox-item>
-            <flexbox-item>
-                <div class="my_lie">
-                    <img src="../assets/pic9.png" class="pic9">
-                    <div class="my_lieRight">
-                    <p>我发起的</p>
-                    </div>
-                </div>
-            </flexbox-item>
-            <flexbox-item>
-                <div class="my_lie">
-                    <img src="../assets/pic10.png" class="pic10">
-                    <div class="my_lieRight">
-                    <p>抄送我的</p>
+                    <p>{{my_data.my_txt}}</p>
                     </div>
                 </div>
             </flexbox-item>
@@ -42,10 +26,11 @@
 <script>
   import {Grid, GridItem, GroupTitle, Flexbox, FlexboxItem, Divider} from 'vux'
   import Vtabbar from './components/tabbar'
-  
+  var myData = require('../assets/data_json/my.json')
   export default {
     data () {
       return {
+        myData: myData
       }
     },
     methods: {
@@ -116,16 +101,6 @@
       border-bottom: 0.01rem solid #dde0ef;
     }
     .pic8{
-      width: 1.2rem /* 100/100 */;
-      height: 1.2rem /* 50/100 */;
-      border-radius: 0.2rem;
-    }
-    .pic9{
-      width: 1.2rem /* 100/100 */;
-      height: 1.2rem /* 50/100 */;
-      border-radius: 0.2rem;
-    }
-    .pic10{
       width: 1.2rem /* 100/100 */;
       height: 1.2rem /* 50/100 */;
       border-radius: 0.2rem;

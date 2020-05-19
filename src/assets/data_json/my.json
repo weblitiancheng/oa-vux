@@ -1,0 +1,17 @@
+[
+    {
+        "my_txt":"我审批的",
+        "my_url": "",
+        "my_img": "/src/assets/pic8.png"
+    },
+    {
+        "my_txt":"我发起的",
+        "my_url":"",
+        "my_img": "/src/assets/pic9.png"
+    },
+    {
+        "my_txt":"抄送我的",
+        "my_url": "",
+        "my_img": "/src/assets/pic10.png"
+    }
+]

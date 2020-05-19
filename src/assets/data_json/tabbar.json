@@ -1,18 +1,26 @@
 [
     {
         "tabbar_txt":"消息",
-        "tabbar_url": "http://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/93402e82-5a4e-47f2-b570-48788e222c33.png"
+        "tabbar_url": "/src/assets/msg.png",
+        "tabbar_urls": "/src/assets/msgs.png",
+        "link_url": "msg"
     },
     {
         "tabbar_txt":"工作台",
-        "tabbar_url":"https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/28.png"
+        "tabbar_url":"/src/assets/ipason-w.png",
+        "tabbar_urls":"/src/assets/ipason.png",
+        "link_url": "workbench"
     },
     {
         "tabbar_txt":"通讯录",
-        "tabbar_url": "http://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/4ec98fe6-e2de-485d-82d9-5958e383c4eb.png"
+        "tabbar_url": "/src/assets/customer.png",
+        "tabbar_urls": "/src/assets/customers.png",
+        "link_url": "customer"
     },
     {
         "tabbar_txt":"我的",
-        "tabbar_url":"https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/21.png"
+        "tabbar_url":"/src/assets/my.png",
+        "tabbar_urls":"/src/assets/mys.png",
+        "link_url": "my"
     }
   ]
