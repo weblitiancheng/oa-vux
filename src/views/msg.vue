@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="overflow-x: hidden;">
       <flexbox orient="vertical">
         <flexbox-item><div class=" title"><img src="../assets/ipason_log.png"  class="ipason_log"></div></flexbox-item>
       </flexbox>
@@ -61,13 +61,15 @@
           </div>
         </flexbox-item>
       </flexbox>
+
+      <Vtabbar></Vtabbar>
     </div>
 </template>
 
 
 <script>
+import Vtabbar from './components/tabbar'
 import { Flexbox, FlexboxItem, Divider } from 'vux'
-
 export default {
   data () {
     return {
@@ -77,7 +79,8 @@ export default {
   components: {
     Flexbox,
     FlexboxItem,
-    Divider
+    Divider,
+    Vtabbar
   }
 }
 </script>

@@ -1,11 +1,4 @@
 import Home from '../views/components/HelloFromVux'
-
-const routers = [
-  {
-    path: '/',
-    meta: {
-import Home from '../views/components/HelloFromVux'
-
 const routers = [
   {
     path: '/',
@@ -42,6 +35,24 @@ const routers = [
       isLogin: true
     },
     component: (resolve) => require(['@/views/msg'], resolve)
+  },
+  {
+    path: '/workbench',
+    meta: {
+      title: '工作台',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/workbench'], resolve)
+  },
+  {
+    path: '/my',
+    meta: {
+      title: '个人设置',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/my'], resolve)
   }
 ]
 export default routers
