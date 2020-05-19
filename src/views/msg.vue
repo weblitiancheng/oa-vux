@@ -92,11 +92,11 @@ export default {
     /* @import '~vux/src/styles/1px.less'; */
 
     .flex-demo {
-    text-align: center;
-    color: #fff;
-    background-color: #20b907;
-    border-radius: 4px;
-    background-clip: padding-box;
+      text-align: center;
+      color: #fff;
+      background-color: #20b907;
+      border-radius: 4px;
+      background-clip: padding-box;
     }
     .ipason_log{
         width:3.4rem /* 440/100 */;

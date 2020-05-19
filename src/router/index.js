@@ -53,6 +53,15 @@ const routers = [
       isLogin: true
     },
     component: (resolve) => require(['@/views/my'], resolve)
+  },
+  {
+    path: '/customer',
+    meta: {
+      title: '通讯录',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/customer'], resolve)
   }
 ]
 export default routers

@@ -1,0 +1,32 @@
+[
+    {
+        "customer_txt":"我审批的",
+        "customer_url": "",
+        "customer_img": "/src/assets/pic8.png"
+    },
+    {
+        "customer_txt":"我发起的",
+        "customer_url":"",
+        "customer_img": "/src/assets/pic9.png"
+    },
+    {
+        "customer_txt":"抄送我的",
+        "customer_url": "",
+        "customer_img": "/src/assets/pic10.png"
+    },
+    {
+        "customer_txt":"我发起的1asd",
+        "customer_url":"",
+        "customer_img": "/src/assets/pic9.png"
+    },
+    {
+        "customer_txt":"抄送我的asd",
+        "customer_url": "",
+        "customer_img": "/src/assets/pic10.png"
+    },
+    {
+        "customer_txt":"抄送我的asddf",
+        "customer_url": "",
+        "customer_img": "/src/assets/pic10.png"
+    }
+]

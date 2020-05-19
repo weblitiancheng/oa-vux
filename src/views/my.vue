@@ -11,7 +11,7 @@
         <flexbox orient="vertical" :gutter="0">
             <flexbox-item v-for="(my_data,index) of myData" :key="my_data.my_txt">
                 <div class="my_lie">
-                    <img :src="my_data.my_img" class="pic8">
+                    <img :src="my_data.my_img" class="my_pic8">
                     <div class="my_lieRight">
                     <p>{{my_data.my_txt}}</p>
                     </div>
@@ -100,7 +100,7 @@
       padding-left: .5rem;
       border-bottom: 0.01rem solid #dde0ef;
     }
-    .pic8{
+    .my_pic8{
       width: 1.2rem /* 100/100 */;
       height: 1.2rem /* 50/100 */;
       border-radius: 0.2rem;
@@ -117,21 +117,5 @@
       font-size: 0.5rem;
       color: #000d49;
     }
-    .my_in_box span{
-      font-size: 0.4;
-      color: #a5abcf;
-    }
-    .red_size{
-      width: 0.6rem;
-      height: 0.6rem;
-      border-radius: 50%;
-      color: red !important;
-      text-align: center;
-      line-height: 0.6rem;
-      display: inline-block;
-      border: 0.02rem solid #dde0ef;
-    }
-    .left_size{
-      width: 6rem;
-    }
+   
 </style>
