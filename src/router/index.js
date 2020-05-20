@@ -62,6 +62,15 @@ const routers = [
       isLogin: true
     },
     component: (resolve) => require(['@/views/customer'], resolve)
+  },
+  {
+    path: '/approve',
+    meta: {
+      title: '审批消息',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/approve'], resolve)
   }
 ]
 export default routers

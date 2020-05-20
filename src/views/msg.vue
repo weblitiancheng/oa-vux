@@ -25,7 +25,7 @@
           <div class="msg_lie">
             <img src="../assets/system_ico.jpg" class="system_ico1">
             <div class="msg_lieRight">
-              <p>11</p>
+              <p>系统消息</p>
               <div class="msg_in_box">
                 <span>111</span>
                 <span class="red_size">18</span>
@@ -35,23 +35,24 @@
           </div>
         </flexbox-item>
         <flexbox-item>
+          <router-link to="/approve">
           <div class="msg_lie">
             <img src="../assets/appr_ico.png" class="system_ico2">
             <div class="msg_lieRight">
-              <p>11</p>
+              <p>审批消息</p>
               <div class="msg_in_box">
                 <span class="left_size">111</span>
                 <span class="red_size">2</span>
               </div>
             </div>
-
           </div>
+          </router-link>
         </flexbox-item>
         <flexbox-item>
           <div class="msg_lie">
             <img src="../assets/tongzhi_ico.png" class="system_ico3">
             <div class="msg_lieRight">
-              <p>11</p>
+              <p>发文通知</p>
               <div class="msg_in_box">
                 <span>111</span>
                 <span class="red_size">8</span>
@@ -140,9 +141,10 @@ export default {
       display: flex;
       justify-content: space-between;
       width: 7.5rem;
+      align-items: center;
     }
     .msg_lieRight p{
-      font-size: 0.5rem;
+      font-size: 0.4rem;
       color: #000d49;
     }
     .msg_in_box span{
