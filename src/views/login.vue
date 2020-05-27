@@ -1,11 +1,3 @@
-<!--
- * @Author: your name
- * @Date: 2020-05-27 09:07:07
- * @LastEditTime: 2020-05-27 14:08:28
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \oa-h5f:\Codes\oa-vux\src\views\login.vue
---> 
 <template>
   <div class="login_banner">
     <img src="/src/assets/ipason.png" class="login_img">

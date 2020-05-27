@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-05-15 09:15:50
- * @LastEditTime: 2020-05-27 09:48:30
- * @LastEditors: your name
+ * @LastEditTime: 2020-05-27 14:41:34
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \oa-h5f:\Codes\oa-vux\src\router\index.js
  */
@@ -88,6 +88,15 @@ const routers = [
       isLogin: true
     },
     component: (resolve) => require(['@/views/login'], resolve)
+  },
+  {
+    path: '/impower',
+    meta: {
+      title: '授权页面',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/impower'], resolve)
   }
 ]
 export default routers
