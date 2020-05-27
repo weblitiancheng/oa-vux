@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-05-15 09:15:50
+ * @LastEditTime: 2020-05-27 09:48:30
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \oa-h5f:\Codes\oa-vux\src\router\index.js
+ */
 import Home from '../views/components/HelloFromVux'
 const routers = [
   {
@@ -71,6 +79,15 @@ const routers = [
       isLogin: true
     },
     component: (resolve) => require(['@/views/approve'], resolve)
+  },
+  {
+    path: '/login',
+    meta: {
+      title: '登录',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/login'], resolve)
   }
 ]
 export default routers
