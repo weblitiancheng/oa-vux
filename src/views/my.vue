@@ -9,7 +9,7 @@
         </div>
         <p class="line"></p>
         <flexbox orient="vertical" :gutter="0">
-            <flexbox-item v-for="(my_data,index) of myData" :key="my_data.my_txt">
+            <flexbox-item v-for="(my_data) of myData" :key="my_data.my_txt">
                 <div class="my_lie">
                     <img :src="my_data.my_img" class="my_pic8">
                     <div class="my_lieRight">

@@ -36,6 +36,51 @@ const routers = [
     component: (resolve) => require(['@/views/appr'], resolve)
   },
   {
+    path: '/approve',
+    meta: {
+      title: '审批消息',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/approve'], resolve)
+  },
+  {
+    path: '/appr_view',
+    meta: {
+      title: '审批查看',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/appr_view'], resolve)
+  },
+  {
+    path: '/appr_view',
+    meta: {
+      title: '审批查看',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/appr_view'], resolve)
+  },
+  {
+    path: '/appr_agree',
+    meta: {
+      title: '审批同意',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/appr_agree'], resolve)
+  },
+  {
+    path: '/appr_refuse',
+    meta: {
+      title: '审批拒绝',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/appr_refuse'], resolve)
+  },
+  {
     path: '/msg',
     meta: {
       title: '首页',
@@ -70,15 +115,6 @@ const routers = [
       isLogin: true
     },
     component: (resolve) => require(['@/views/customer'], resolve)
-  },
-  {
-    path: '/approve',
-    meta: {
-      title: '审批消息',
-      keepAlive: true,
-      isLogin: true
-    },
-    component: (resolve) => require(['@/views/approve'], resolve)
   },
   {
     path: '/login',

@@ -8,6 +8,8 @@ import {AjaxPlugin, WechatPlugin} from 'vux'
 import 'es6-promise/auto'
 import 'lib-flexible/flexible.js'
 
+// 引入字体图标
+import './assets/fonts/iconfont.css'
 Vue.use(VueRouter)
 Vue.use(WechatPlugin)
 Vue.use(AjaxPlugin)
