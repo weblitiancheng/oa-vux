@@ -1,6 +1,6 @@
 <template>
   <div class="login_banner">
-    <img src="/src/assets/ipason.png" class="login_img">
+    <img src="@/assets/ipason.png" class="login_img">
     <div class="login_name">攀升彭于晏</div>
     <div class="biaoti1">欢迎来到攀升OA办公平台</div>
     <div class="biaoti2">
@@ -11,7 +11,7 @@
     <form class="form_box">
       <div class="put_box">
         <input type="text" placeholder="手机号码" id="mobile" class="one_put" v-model="mobile" maxlength="11">
-        <img src="/src/assets/phone.png" class="phone_img">
+        <img src="@/assets/phone.png" class="phone_img">
       </div>
       <div class="put_box">
         <input type="text" placeholder="短信验证码" id="rcode" class="two_put" v-model="inputCode" maxlength="6">

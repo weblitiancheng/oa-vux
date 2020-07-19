@@ -40,7 +40,7 @@
                 </card>  
               </router-link>
               <div class="time">昨天15：30</div>
-              <div class="icon"><img src="../assets/appr_ico.png" alt=""></div>
+              <div class="icon"><img src="@/assets/appr_ico.png" alt=""></div>
             </div>
             <div class="list-items">
               <router-link to="/appr_view" class="appr_link">
@@ -53,7 +53,7 @@
                 </card>  
               </router-link>
               <div class="time">昨天15：30</div>
-              <div class="icon"><img src="../assets/appr_ico.png" alt=""></div>
+              <div class="icon"><img src="@/assets/appr_ico.png" alt=""></div>
             </div>
             <div class="list-items">
               <router-link to="/appr_view" class="appr_link">
@@ -66,7 +66,7 @@
                 </card>  
               </router-link>
               <div class="time">昨天15：30</div>
-              <div class="icon"><img src="../assets/pic12b.png" alt=""></div>
+              <div class="icon"><img src="@/assets/pic12b.png" alt=""></div>
             </div>
             <div class="list-items">
               <router-link to="/appr_view" class="appr_link">
@@ -79,7 +79,7 @@
                 </card>  
               </router-link>
               <div class="time">昨天15：30</div>
-              <div class="icon"><img src="../assets/pic12b.png" alt=""></div>
+              <div class="icon"><img src="@/assets/pic12b.png" alt=""></div>
             </div>
             <div class="list-items">
               <router-link to="/appr_view" class="appr_link">
@@ -92,7 +92,7 @@
                 </card>  
               </router-link>
               <div class="time">昨天15：30</div>
-              <div class="icon"><img src="../assets/pic12b.png" alt=""></div>
+              <div class="icon"><img src="@/assets/pic12b.png" alt=""></div>
             </div>
             <div class="list-items">
               <router-link to="/appr_view" class="appr_link">
@@ -105,7 +105,7 @@
                 </card>  
               </router-link>
               <div class="time">昨天15：30</div>
-              <div class="icon"><img src="../assets/appr_ico.png" alt=""></div>
+              <div class="icon"><img src="@/assets/appr_ico.png" alt=""></div>
             </div>
       
              <load-more 
@@ -136,7 +136,7 @@
                 <card class="appr-card daiban">
                   <div slot="content">
                       <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
+                        <img src="@/assets/appr_ico.png" alt="">
                         <span>xxx的xx审批</span>
                       </div>
                       <div class="feedback">
@@ -153,7 +153,7 @@
                 <card class="appr-card daiban">
                   <div slot="content">
                       <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
+                        <img src="@/assets/appr_ico.png" alt="">
                         <span>xxx的xx审批</span>
                       </div>
                       <div class="feedback">
@@ -170,7 +170,7 @@
                 <card class="appr-card daiban">
                   <div slot="content">
                       <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
+                        <img src="@/assets/appr_ico.png" alt="">
                         <span>xxx的xx审批</span>
                       </div>
                       <div class="feedback">
@@ -187,7 +187,7 @@
                 <card class="appr-card daiban">
                   <div slot="content">
                       <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
+                        <img src="@/assets/appr_ico.png" alt="">
                         <span>xxx的xx审批</span>
                       </div>
                       <div class="feedback">
@@ -204,7 +204,7 @@
                 <card class="appr-card daiban">
                   <div slot="content">
                       <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
+                        <img src="@/assets/appr_ico.png" alt="">
                         <span>xxx的xx审批</span>
                       </div>
                       <div class="feedback">
@@ -220,24 +220,7 @@
                 <card class="appr-card daiban">
                   <div slot="content">
                       <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
-                        <span>xxx的xx审批</span>
-                      </div>
-                      <div class="feedback">
-                          <router-link to="/appr_refuse" class="refuse">拒绝</router-link>
-                          <router-link to="/appr_agree" class="agree">同意</router-link>
-                      </div>
-                  </div>
-                </card>
-              </router-link>
-
-            </div>
-            <div class="ready_items">
-              <router-link to="/appr_view">
-                <card class="appr-card daiban">
-                  <div slot="content">
-                      <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
+                        <img src="@/assets/appr_ico.png" alt="">
                         <span>xxx的xx审批</span>
                       </div>
                       <div class="feedback">
@@ -254,7 +237,7 @@
                 <card class="appr-card daiban">
                   <div slot="content">
                       <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
+                        <img src="@/assets/appr_ico.png" alt="">
                         <span>xxx的xx审批</span>
                       </div>
                       <div class="feedback">
@@ -271,7 +254,7 @@
                 <card class="appr-card daiban">
                   <div slot="content">
                       <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
+                        <img src="@/assets/appr_ico.png" alt="">
                         <span>xxx的xx审批</span>
                       </div>
                       <div class="feedback">
@@ -288,7 +271,7 @@
                 <card class="appr-card daiban">
                   <div slot="content">
                       <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
+                        <img src="@/assets/appr_ico.png" alt="">
                         <span>xxx的xx审批</span>
                       </div>
                       <div class="feedback">
@@ -305,7 +288,24 @@
                 <card class="appr-card daiban">
                   <div slot="content">
                       <div class="appr-msg">
-                        <img src="../assets/appr_ico.png" alt="">
+                        <img src="@/assets/appr_ico.png" alt="">
+                        <span>xxx的xx审批</span>
+                      </div>
+                      <div class="feedback">
+                          <router-link to="/appr_refuse" class="refuse">拒绝</router-link>
+                          <router-link to="/appr_agree" class="agree">同意</router-link>
+                      </div>
+                  </div>
+                </card>
+              </router-link>
+
+            </div>
+            <div class="ready_items">
+              <router-link to="/appr_view">
+                <card class="appr-card daiban">
+                  <div slot="content">
+                      <div class="appr-msg">
+                        <img src="@/assets/appr_ico.png" alt="">
                         <span>xxx的xx审批</span>
                       </div>
                       <div class="feedback">

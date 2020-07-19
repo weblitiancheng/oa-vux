@@ -2,7 +2,7 @@
   <div style="overflow-x: hidden;">
     <flexbox orient="vertical">
       <flexbox-item>
-        <div class=" title"><img src="../assets/ipason_log.png" class="ipason_log"></div>
+        <div class=" title"><img src="@/assets/ipason_log.png" class="ipason_log"></div>
       </flexbox-item>
     </flexbox>
 
@@ -23,7 +23,7 @@
     <flexbox orient="vertical" :gutter="0">
       <flexbox-item>
         <div class="msg_lie">
-          <img src="../assets/system_ico.jpg" class="system_ico1">
+          <img src="@/assets/system_ico.jpg" class="system_ico1">
           <div class="msg_lieRight">
             <p>系统消息</p>
             <div class="msg_in_box">
@@ -37,7 +37,7 @@
       <flexbox-item>
         <router-link to="/approve">
           <div class="msg_lie">
-            <img src="../assets/appr_ico.png" class="system_ico2">
+            <img src="@/assets/appr_ico.png" class="system_ico2">
             <div class="msg_lieRight">
               <p>审批消息</p>
               <div class="msg_in_box">
@@ -50,7 +50,7 @@
       </flexbox-item>
       <flexbox-item>
         <div class="msg_lie">
-          <img src="../assets/tongzhi_ico.png" class="system_ico3">
+          <img src="@/assets/tongzhi_ico.png" class="system_ico3">
           <div class="msg_lieRight">
             <p>发文通知</p>
             <div class="msg_in_box">
@@ -69,7 +69,7 @@
 
 
 <script>
-import Vtabbar from './components/tabbar'
+import Vtabbar from '@/views/components/tabbar'
 import { Flexbox, FlexboxItem, Divider } from 'vux'
 export default {
   data () {

@@ -24,7 +24,7 @@
         <br>
         <h2>常用联系人</h2>
         <flexbox orient="vertical" :gutter="0" style="overflow: hidden;">
-            <flexbox-item v-for="(customer_data,index) of customerData" :key="customer_data.customer_txt">
+            <flexbox-item v-for="(customer_data) of customerData" :key="customer_data.customer_txt">
                 <div class="msg_lie">
                     <img :src="customer_data.customer_img" class="customer_vx">
                     <div class="msg_lieRight">{{customer_data.customer_txt}}</div>
@@ -38,8 +38,8 @@
 
 <script>
   import {Grid, GridItem, GroupTitle, Flexbox, FlexboxItem, Divider} from 'vux'
-  import Vtabbar from './components/tabbar'
-  var customerData = require('../assets/data_json/customer.json')
+  import Vtabbar from '@/views/components/tabbar'
+  var customerData = require('@/assets/data_json/customer.json')
   
   export default {
     data () {

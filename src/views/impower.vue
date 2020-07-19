@@ -8,7 +8,7 @@
 --> 
 <template>
   <div class="login_banner">
-    <img src="/src/assets/ipason.png" class="login_img">
+    <img src="@/assets/ipason.png" class="login_img">
     <h2>欢迎登录攀升OA办公平台</h2>
     <br>
     <div class="jieshao_txt">当前微信身份用于关联已绑定OA平台账<br>授权登录即可</div>

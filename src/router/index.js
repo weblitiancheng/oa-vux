@@ -6,80 +6,8 @@
  * @Description: In User Settings Edit
  * @FilePath: \oa-h5f:\Codes\oa-vux\src\router\index.js
  */
-import Home from '../views/components/HelloFromVux'
+
 const routers = [
-  {
-    path: '/',
-    meta: {
-      title: 'demo',
-      keepAlive: true,
-      isLogin: true
-    },
-    component: Home
-  },
-  {
-    path: '/hello',
-    meta: {
-      title: 'HelloWorld',
-      keepAlive: true,
-      isLogin: true
-    },
-    component: (resolve) => require(['@/views/components/HelloWorld'], resolve)
-  },
-  {
-    path: '/appr',
-    meta: {
-      title: '审批',
-      keepAlive: true,
-      isLogin: true
-    },
-    component: (resolve) => require(['@/views/appr'], resolve)
-  },
-  {
-    path: '/approve',
-    meta: {
-      title: '审批消息',
-      keepAlive: true,
-      isLogin: true
-    },
-    component: (resolve) => require(['@/views/approve'], resolve)
-  },
-  {
-    path: '/appr_view',
-    meta: {
-      title: '审批查看',
-      keepAlive: true,
-      isLogin: true
-    },
-    component: (resolve) => require(['@/views/appr_view'], resolve)
-  },
-  {
-    path: '/appr_view',
-    meta: {
-      title: '审批查看',
-      keepAlive: true,
-      isLogin: true
-    },
-    component: (resolve) => require(['@/views/appr_view'], resolve)
-  },
-  {
-    path: '/appr_agree',
-    meta: {
-      title: '审批同意',
-      keepAlive: true,
-      isLogin: true
-    },
-    component: (resolve) => require(['@/views/appr_agree'], resolve)
-  },
-  {
-    path: '/appr_refuse',
-    meta: {
-      title: '审批拒绝',
-      keepAlive: true,
-      isLogin: true
-    },
-    component: (resolve) => require(['@/views/appr_refuse'], resolve)
-  },
   {
     path: '/msg',
     meta: {
@@ -87,7 +15,7 @@ const routers = [
       keepAlive: true,
       isLogin: true
     },
-    component: (resolve) => require(['@/views/msg'], resolve)
+    component: (resolve) => require(['@/views/Message/msg'], resolve)
   },
   {
     path: '/workbench',
@@ -96,7 +24,7 @@ const routers = [
       keepAlive: true,
       isLogin: true
     },
-    component: (resolve) => require(['@/views/workbench'], resolve)
+    component: (resolve) => require(['@/views/Workbench/workbench'], resolve)
   },
   {
     path: '/my',
@@ -105,7 +33,7 @@ const routers = [
       keepAlive: true,
       isLogin: true
     },
-    component: (resolve) => require(['@/views/my'], resolve)
+    component: (resolve) => require(['@/views/My/my'], resolve)
   },
   {
     path: '/customer',
@@ -114,7 +42,7 @@ const routers = [
       keepAlive: true,
       isLogin: true
     },
-    component: (resolve) => require(['@/views/customer'], resolve)
+    component: (resolve) => require(['@/views/Customer/customer'], resolve)
   },
   {
     path: '/login',
@@ -133,6 +61,51 @@ const routers = [
       isLogin: true
     },
     component: (resolve) => require(['@/views/impower'], resolve)
+  },
+  {
+    path: '/approve',
+    meta: {
+      title: '审批消息',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/Message/ApprovalMsg/approve'], resolve)
+  },
+  {
+    path: '/appr_view',
+    meta: {
+      title: '审批查看',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/Message/ApprovalMsg/appr_view'], resolve)
+  },
+  {
+    path: '/appr_agree',
+    meta: {
+      title: '审批同意',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/Message/ApprovalMsg/appr_agree'], resolve)
+  },
+  {
+    path: '/appr_refuse',
+    meta: {
+      title: '审批拒绝',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/Message/ApprovalMsg/appr_refuse'], resolve)
+  },
+  {
+    path: '/appr_askforfree',
+    meta: {
+      title: '审批',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/Workbench/Approval/AskForFree/appr'], resolve)
   }
 ]
 export default routers

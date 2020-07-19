@@ -1,31 +1,39 @@
 [
     {
         "bg_txt":"请假",
-        "bg_url": "http://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/93402e82-5a4e-47f2-b570-48788e222c33.png"
+        "bg_url": "http://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/93402e82-5a4e-47f2-b570-48788e222c33.png",
+        "bg_link": "/appr_askforFree"
+        
     },
     {
         "bg_txt":"ERP其他事务",
-        "bg_url":"https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/28.png"
+        "bg_url":"https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/28.png",
+        "bg_link": "/appr_askforFree"
     },
     {
         "bg_txt":"ERP权限",
-        "bg_url": "http://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/4ec98fe6-e2de-485d-82d9-5958e383c4eb.png"
+        "bg_url": "http://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/4ec98fe6-e2de-485d-82d9-5958e383c4eb.png",
+        "bg_link": "/appr_askforFree"
     },
     {
         "bg_txt":"新建店铺",
-        "bg_url":"https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/21.png"
+        "bg_url":"https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/21.png",
+        "bg_link": "/appr_askforFree"
     },
     {
         "bg_txt":"新建仓库",
-        "bg_url": "https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/22.png"
+        "bg_url": "https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/22.png",
+        "bg_link": "/appr_askforFree"
     },
     {
         "bg_txt":"新建ERP账号",
-        "bg_url":"https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/10.png"
+        "bg_url":"https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/10.png",
+        "bg_link": "/appr_askforFree"
     },
     {
         "bg_txt":"CRM权限",
-        "bg_url": "https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/14.png"
+        "bg_url": "https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/14.png",
+        "bg_link": "/appr_askforFree"
     }
 
   ]

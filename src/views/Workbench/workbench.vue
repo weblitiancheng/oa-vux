@@ -9,8 +9,10 @@
       <br>
       <div class="nice_li">
         <ul class="clearfloat">
-          <li v-for="(nice_data,index) of showData" :key="nice_data.bg_txt">
-            <img :src="nice_data.bg_url">
+          <li v-for="(nice_data) of showData" :key="nice_data.bg_txt">
+            <router-link :to='nice_data.bg_link'>
+               <img :src="nice_data.bg_url">
+            </router-link>
             <p>{{nice_data.bg_txt}}</p>
           </li>
         </ul>
@@ -22,8 +24,8 @@
 
 <script>
   import {Grid, GridItem, GroupTitle, Flexbox, FlexboxItem, Divider} from 'vux'
-  import Vtabbar from './components/tabbar'
-  var niceData = require('../assets/data_json/workbench.json')
+  import Vtabbar from '@/views/components/tabbar'
+  import niceData from '@/assets/data_json/workbench.json'
   export default {
     data () {
       return {

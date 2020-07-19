@@ -1,7 +1,7 @@
 <template>
     <div style="overflow-x: hidden;">
         <div class="message_box">
-            <img src="../assets/logo.png" class="my_img">
+            <img src="@/assets/logo.png" class="my_img">
             <div>
                 <h2 class="my_name">沈志雄</h2>
                 <p class="my_job">软件研发部</p>
@@ -25,8 +25,8 @@
 
 <script>
   import {Grid, GridItem, GroupTitle, Flexbox, FlexboxItem, Divider} from 'vux'
-  import Vtabbar from './components/tabbar'
-  var myData = require('../assets/data_json/my.json')
+  import Vtabbar from '@/views/components/tabbar'
+  var myData = require('@/assets/data_json/my.json')
   export default {
     data () {
       return {

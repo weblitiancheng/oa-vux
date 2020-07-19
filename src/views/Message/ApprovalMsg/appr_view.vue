@@ -7,7 +7,7 @@
       <card class="header">
           <div slot="content">
               <div>
-                  <img src="../assets/wximg.jpg" alt="">
+                  <img src="@/assets/wximg.jpg" alt="">
                   <span>lalala</span>
               </div>
           </div>
@@ -119,7 +119,7 @@
                 <flexbox :gutter="0"  wrap="wrap" class="flexbox">
                   <flexbox-item :span="4">
                     <div class="flex-img">
-                        <img src="../assets/wximg.jpg" alt="">
+                        <img src="@/assets/wximg.jpg" alt="">
                     </div>
                   </flexbox-item>
                   <flexbox-item :span="8">
@@ -138,7 +138,7 @@
                 <flexbox :gutter="0"  wrap="wrap" class="flexbox">
                   <flexbox-item :span="4">
                     <div class="flex-demo flex-img">
-                        <img src="../assets/system_ico.jpg" alt="">
+                        <img src="@/assets/system_ico.jpg" alt="">
                     </div>
                   </flexbox-item>
                   <flexbox-item :span="8">
