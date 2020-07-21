@@ -14,146 +14,103 @@
       </card>
       <card class="appr_msg">
         <div slot="content">
-            <flexbox :gutter="0"  wrap="wrap" class="flexbox">
-             <flexbox-item :span="4" class="firstPart">
-                    <div>
-                        所在部门
-                    </div>
+            <flexbox orient="vertical" :gutter="0">
+              <!-- <flexbox-item>
+                <div class="msg_row">
+                    <span class="row_l">审批编号</span>
+                    <span class="row_r">2020071941754450002</span>
+                </div>
+              </flexbox-item> -->
+              <flexbox-item  
+                v-for="(items,index) of appr_msg" 
+                :key="index"
+              >
+                <div class="msg_row">
+                    <span class="row_l">{{items.appr_msg}}</span>
+                    <span class="row_r">{{items.appr_conent}}</span>
+                </div>
               </flexbox-item>
-              <flexbox-item :span="8">
-                    <div class="secondPart">
-                       软件开发部
-                    </div>
-              </flexbox-item>
-            </flexbox>
-            <flexbox :gutter="0"  wrap="wrap" class="flexbox">
-             <flexbox-item :span="4" class="firstPart">
-                    <div>
-                        用章公司
-                    </div>
-              </flexbox-item>
-              <flexbox-item :span="8">
-                    <div class="secondPart">
-                       武汉攀升鼎承科技有限公司
-                    </div>
-              </flexbox-item>
-            </flexbox>
-            <flexbox :gutter="0"  wrap="wrap" class="flexbox">
-             <flexbox-item :span="4" class="firstPart">
-                    <div>
-                        用途
-                    </div>
-              </flexbox-item>
-              <flexbox-item :span="8">
-                    <div class="secondPart">
-                       啦啦
-                    </div>
-              </flexbox-item>
-            </flexbox>
-            <flexbox :gutter="0"  wrap="wrap" class="flexbox">
-             <flexbox-item :span="4" class="firstPart">
-                    <div>
-                        金额
-                    </div>
-              </flexbox-item>
-              <flexbox-item :span="8">
-                    <div class="secondPart">
-                       ￥300,000.00
-                    </div>
-              </flexbox-item>
-            </flexbox>
-            <flexbox :gutter="0"  wrap="wrap" class="flexbox">
-             <flexbox-item :span="4" class="firstPart">
-                    <div>
-                        合同编号
-                    </div>
-              </flexbox-item>
-              <flexbox-item :span="8">
-                    <div class="secondPart">
-                       啦啦啦
-                    </div>
-              </flexbox-item>
-            </flexbox>
-            <flexbox :gutter="0"  wrap="wrap" class="flexbox">
-             <flexbox-item :span="4" class="firstPart">
-                    <div>
-                        对方名称
-                    </div>
-              </flexbox-item>
-              <flexbox-item :span="8">
-                    <div class="secondPart">
-                       啦啦啦
-                    </div>
-              </flexbox-item>
-            </flexbox>
-            <flexbox :gutter="0"  wrap="wrap" class="flexbox">
-              <flexbox-item :span="4" class="firstPart">
-                    <div>
-                        用印份数
-                    </div>
-              </flexbox-item>
-              <flexbox-item :span="8">
-                    <div class="secondPart">
-                      5
-                    </div>
-              </flexbox-item>
-            </flexbox>
-            <flexbox :gutter="0"  wrap="wrap" class="flexbox">
-              <flexbox-item :span="4" class="firstPart">
-                    <div>
-                        附件
-                    </div>
-              </flexbox-item>
-              <flexbox-item :span="8">
-                    <div class="secondPart">
-                     
-                    </div>
-              </flexbox-item>
-            </flexbox>
-            
+            </flexbox>   
         </div>
       </card>
-      <card class="arrr_steps" style="overflow:visible">
+      <card style="overflow:visible">
           <div slot="content">
               <div class="appr_items">
-                <flexbox :gutter="0"  wrap="wrap" class="flexbox">
-                  <flexbox-item :span="4">
-                    <div class="flex-img">
-                        <img src="@/assets/wximg.jpg" alt="">
-                    </div>
-                  </flexbox-item>
-                  <flexbox-item :span="8">
-                    <div class="flex-text">
-                
-                        <div class="flex-l">
-                            <h5>发起申请</h5>
-                            <p>沈志雄</p>
-                        </div>
-                        <div class="flex-r">
-                            <span>2020/6/24 14:42</span>
-                        </div>
-                    </div>  
-                  </flexbox-item>
-                </flexbox>
-                <flexbox :gutter="0"  wrap="wrap" class="flexbox">
-                  <flexbox-item :span="4">
-                    <div class="flex-demo flex-img">
-                        <img src="@/assets/system_ico.jpg" alt="">
-                    </div>
-                  </flexbox-item>
-                  <flexbox-item :span="8">
-                    <div class="flex-text">
-                      <div class="flex-l">
-                        <h5>审批人</h5>
-                        <p>4人审批</p>
+                <flexbox :gutter="0" orient="vertical">
+                  <flexbox-item>
+                    <div class="flexbox">
+                      <div class="flex-img">
+                          <img src="@/assets/wximg.jpg" alt="">
                       </div>
-                      <div class="flex-r">
-                         <span class="iconfont icon-xiajiantou"></span>
-                      </div>
+                      <div class="flex-text">
+                          <div class="flex-l">
+                              <h5>发起申请</h5>
+                              <p>沈志雄</p>
+                              <p></p>
+                          </div>
+                          <div class="flex-r">
+                              <span>2020/6/24 14:42</span>
+                          </div>
+                      </div> 
                     </div>
                   </flexbox-item>
-                   
-                   
+                  <flexbox-item>
+                    <div class="flexbox">
+                      <div class="flex-img">
+                          <img src="@/assets/wximg.jpg" alt="">
+                      </div>
+                      <div class="flex-text">
+                  
+                          <div class="flex-l">
+                              <h5>审批人</h5>
+                              <p>啦啦啦</p>
+                              <p>(审批中)</p>
+                          </div>
+                          <div class="flex-r">
+                              <span>14:42</span>
+                          </div>
+                      </div> 
+                    </div>
+                  </flexbox-item>
+                  <flexbox-item>
+                    <div class="flexbox">
+                      <div class="flex-img">
+                          <img src="@/assets/wximg.jpg" alt="">
+                      </div>
+                      <div class="flex-text">
+                  
+                          <div class="flex-l">
+                              <h5>发起申请</h5>
+                              <p>沈志雄</p>
+                              <p>(审批中)</p>
+                          </div>
+                          <div class="flex-r">
+                              <span>2020/6/24 14:42</span>
+                          </div>
+                      </div> 
+                    </div>
+                  </flexbox-item>
+                  <flexbox-item>
+                    <div class="flexbox">
+                      <div class="flex-img">
+                          <img src="@/assets/system_ico.jpg" alt="">
+                      </div>
+                      <div class="flex-text">
+                  
+                          <div class="flex-l">
+                              <h5>发起申请</h5>
+                              <p>四个审批人</p>
+                              <p></p>
+                          </div>
+                          <div class="flex-r">
+                              <span :class="[activeClass]" @click="handleAppr"></span>
+                          </div>
+                      </div> 
+                    </div>
+                    <div class="morethan">
+                      
+                    </div>
+                  </flexbox-item>
                 </flexbox>
               </div>
           </div>
@@ -178,6 +135,36 @@ export default {
   name: 'appr',
   data () {
     return {
+      activeClass: 'icon-shangjiantou',
+      //模拟msg的信息
+      appr_msg: [
+        {
+          appr_msg:'审批编号',
+          appr_conent:2020071941754450002
+        },
+        {
+          appr_msg:'所在部门',
+          appr_conent:'软件开发部'
+        },
+        {
+          appr_msg:'事由',
+          appr_conent:'啦啦啦啦啦啦啦啦啦啦啦啦d啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
+        },
+        {
+          appr_msg:'金额',
+          appr_conent:0
+        },
+        {
+          appr_msg:'附件',
+          appr_conent:''
+        }
+      ],
+      // 如果审批人的个数超过俩个的话 .morethen的div显示，且span里里面有点击事件
+    }
+  },
+  methods: {
+    handleAppr () {
+      this.activeClass ==='iconfont icon-xiajiantou' ?  this.activeClass='iconfont icon-shangjiantou' : this.activeClass = 'iconfont icon-xiajiantou'
     }
   },
   created () {
@@ -190,7 +177,7 @@ export default {
     XButton
   },
   mounted () {
-
+    console.log(this.$refs)
   }
 }
 </script>
@@ -216,84 +203,78 @@ export default {
   }
 }
 .appr_msg{
-  padding-left: .556rem;
+  padding: .2rem .556rem;
   margin-top: 0;
-  .flexbox{
-    height: .87rem;
+  .msg_row{
+    display: flex;
+    padding: .1rem 0;
     font-size: .352rem;
-    .firstPart{
+   
+    .row_l{
+      flex: 1;
       color: #bebebe;
     }
-    .secondPart{
+    .row_r{
+      flex: 2;
       color:#0e1055 ;
     }
   }
 }
-.appr_items{
-  padding-top: .5rem;
-  overflow: visible;
-  & .flexbox:last-child{
-     padding-bottom: .6rem;
-     &::after{
-      height: 0;
-    }
-  }
- .flexbox{
-    box-sizing: border-box;
-    position: relative;
-    padding: 0 1.1rem 1rem;
-    &::after{
+.appr_steps{
+  padding-bottom: 1.259rem;
+ .appr_items{
+    padding-top: .5rem;
+    overflow: visible;
+    // 从第二flexbox开始才有流程细线
+    & .vux-flexbox-item+.vux-flexbox-item .flexbox .flex-img::after{
       display: block;
       content: '';
       position: absolute;
-      top: 1.6rem;
-      left: 1.6rem;
-      -webkit-transform: translate(-50%);
-      transform: translate(-50%);
       height: 1rem;
       width: .056rem;
       background: #d8daec;
-
-
+      top:-1rem;
+      left: 1.5rem;
     }
-    .vux-flexbox-item{
-      height: 1.628rem;
-      display: flex;
-      align-items: center;
-    }
-    img{
+    .flexbox,.morethan{
       position: relative;
-      width: 1.157rem;
-      height: 1.157rem;
-      border-radius: 50%;
-      vertical-align: middle;
-    }
-
-    .flex-text{
+      padding-left: 1rem;
+      padding-bottom: .6rem;
+      width: 100%;
+      
       display: flex;
-      justify-content: space-between;
-      .flex-l{
-        h5{
-          height: .556rem;
-        }
-        p{
-          color: #a0a0a3;
+      .flex-img{
+        flex: 1;
+        img{
+        
+          width: 1.157rem;
+          height: 1.157rem;
+          border-radius: 50%;
+          vertical-align: middle;
         }
       }
-      .flex-r{
-          display: flex;
-          width: 3.5rem;
-          justify-content: center;
-
+      .flex-text{
+        flex: 2;
+        display: flex;
+        .flex-l{
+          flex: 1;
+          h5{
+             height: .556rem;
+          }
+          p{
+          color: #a0a0a3;
+          }
+          p + p {
+            height: 20px;
+            color:#eb6a1a
+          }
+        }
+        .flex-r{
+          flex: 2;
+        }
       }
     }
-    
-
-  }
-}
-.appr_steps{
-  padding-bottom: 1.259rem;
- 
+ }
 }
 .footBar{
   position: fixed;

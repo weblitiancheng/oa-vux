@@ -13,7 +13,24 @@ export default {
 <style lang="less">
 @import '~vux/src/styles/reset.less';
 
-body {
-  background-color: #fbf9fe;
+
+html {
+  overflow-y: scroll;
 }
+
+// :root {
+//   overflow-y: auto;
+//   overflow-x: hidden;
+// }
+
+// :root body {
+//   position: absolute;
+// }
+
+body {
+  width: 100%;
+  overflow: hidden;
+   background-color: #fbf9fe;
+}
+
 </style>

@@ -9,6 +9,10 @@
 
 const routers = [
   {
+    path: '/',
+    redirect: '/msg'
+  },
+  {
     path: '/msg',
     meta: {
       title: '首页',
@@ -106,6 +110,15 @@ const routers = [
       isLogin: true
     },
     component: (resolve) => require(['@/views/Workbench/Approval/AskForFree/appr'], resolve)
+  },
+  {
+    path: '/appr_annex',
+    meta: {
+      title: '上传附件',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/Workbench/Approval/AskForFree/annex'], resolve)
   }
 ]
 export default routers

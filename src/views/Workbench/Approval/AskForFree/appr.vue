@@ -9,23 +9,8 @@
 <template>
   <div>
     <x-header>请假</x-header>
-    <div>
+    <div class="contanier">
       <group>
-        <!-- <x-input title="手机号" v-model="phone" is-type="china-mobile"></x-input> -->
-        <!--<selector title="城市" v-model="city" :options="cities" direction="rtl"></selector>-->
-        <!-- <component 
-          v-for="(comp,index) in comps" 
-          :is="comp.compName" 
-          :key="index" 
-          :title="comp.title"
-          :is-type="comp.isType" 
-          :options="comp.options" 
-          :text-align="comp.textAlign" 
-          :direction="comp.direction"
-          :label-position="comp.labelPosition" 
-          :value="comp.value"
-        >
-        </component> -->
         <x-input 
           title="事由" 
           v-model = "reason" 
@@ -40,96 +25,255 @@
           placeholder-align = 'center'
         >
         </x-input>
-        <cell title="附件" :link="{path:'/my'}">
+        <cell title="附件">
+            <router-link :to="{path:'/appr_annex'}">{{annex_msg}}</router-link>
        </cell>
       </group>
-      <flow orientation="vertical" style="height:200px;">
-        <flow-state state="1" title="已付款" is-done></flow-state>
-        <flow-line is-done :line-span="15"></flow-line>
-
-        <flow-state state="2" title="已发货" is-done></flow-state>
-        <flow-line :line-span="30" tip="进行中"></flow-line>
-
-        <flow-state state="3" title="待收货"></flow-state>
-        <flow-line :line-span="45"></flow-line>
-
-        <flow-state state="4" title="完成"></flow-state>
-      </flow>
+      <card style="overflow:visible" class="appr_steps">
+          <div slot="content">
+            <div class="appr_items">
+              <flexbox :gutter="0"  wrap="wrap" class="flexbox">
+                <flexbox-item :span="4">
+                  <div class="flex-img">
+                      <img src="@/assets/pic13.png" alt="">
+                  </div>
+                  <div class="level">发起人</div>
+                </flexbox-item>
+                <flexbox-item :span="8">
+                  <div class="flex-text">
+                      <div class="appr_people">
+                        <img src="@/assets/wximg.jpg" alt="">
+                        <br>
+                        <p>李天成</p>
+                     </div>
+                  </div>  
+                </flexbox-item>
+              </flexbox> 
+              <flexbox :gutter="0"  wrap="wrap" class="flexbox ">
+                <flexbox-item :span="4">
+                  <div class="flex-img">
+                      <img src="@/assets/pic11.png" alt="">
+                  </div>
+                  <div class="level">一级审批</div>
+                </flexbox-item>
+                <flexbox-item :span="8">
+                  <div class="flex-text">
+                      <div class="appr_people">
+                        <img src="@/assets/wximg.jpg" alt="">
+                        <br>
+                        <p>啦啦啦</p>
+                     </div>
+                  </div>  
+                </flexbox-item>
+              </flexbox> 
+              <flexbox :gutter="0"  wrap="wrap" class="flexbox ">
+                <flexbox-item :span="4">
+                  <div class="flex-img">
+                      <img src="@/assets/pic11.png" alt="">
+                  </div>
+                  <div class="level">二级审批</div>
+                </flexbox-item>
+                <flexbox-item :span="8" class="">
+                  <div class="flex-text ">
+                     <div class="appr_people">
+                        <img src="@/assets/wximg.jpg" alt="">
+                        <br>
+                        <p>李天成</p>
+                     </div>
+                      <div class="appr_people">
+                        <img src="@/assets/wximg.jpg" alt="">
+                        <br>
+                        <p>李天成</p>
+                     </div>
+                  </div>  
+                </flexbox-item>
+              </flexbox>
+              <flexbox :gutter="0"  wrap="wrap" class="flexbox ">
+                <flexbox-item :span="4">
+                  <div class="flex-img">
+                      <img src="@/assets/pic11.png" alt="">
+                  </div>
+                  <div class="level">三级审批</div>
+                </flexbox-item>
+                <flexbox-item :span="8" class="">
+                  <div class="flex-text ">
+                     <div class="appr_people">
+                        <img src="@/assets/wximg.jpg" alt="">
+                        <br>
+                        <p>李天成</p>
+                     </div>
+                      <div class="appr_people">
+                        <img src="@/assets/wximg.jpg" alt="">
+                        <br>
+                        <p>李天成</p>
+                     </div>
+                  </div>  
+                </flexbox-item>
+              </flexbox>
+              <flexbox :gutter="0"  wrap="wrap" class="flexbox"  style="padding-bottom:1.5rem ">
+                <flexbox-item :span="4">
+                  <div class="flex-img">
+                      <img src="@/assets/pic12.png" alt="">
+                  </div>
+                  <div class="level">抄送</div>
+                </flexbox-item>
+                <flexbox-item :span="8">
+                  <div class="flex-text" style="padding-top:1.2rem ">
+                    <div class="appr_people">
+                      <img src="@/assets/wximg.jpg" alt="">
+                      <br>
+                      <p>李天成</p>
+                    </div>
+                    <div class="appr_people">
+                      <img src="@/assets/wximg.jpg" alt="">
+                      <br>
+                      <p>李天成</p>
+                    </div>
+                    <div class="appr_people">
+                      <img src="@/assets/wximg.jpg" alt="">
+                      <br>
+                      <p>李天成</p>
+                    </div>
+                    <div class="appr_people">
+                      <img src="@/assets/wximg.jpg" alt="">
+                      <br>
+                      <p>李天成</p>
+                    </div> 
+                    <div class="appr_people">
+                      <img src="@/assets/wximg.jpg" alt="">
+                      <br>
+                      <p>李天成</p>
+                    </div>                         
+                  </div>  
+                </flexbox-item>
+              </flexbox>
+            </div>
+          </div>
+      </card>
+      <div class="submit_btn">
+        <x-button
+          style="color:#fff;background:#2e439c"
+        >
+          同意
+        </x-button>
+      </div>
     </div>
   </div>
 </template>      
 
 <script>
-import { Flow, FlowLine, FlowState, Group, Selector, XHeader, XInput, Checklist, Cell } from 'vux'
+import {  Group, XHeader, XInput,  Cell, Flexbox, FlexboxItem, Card, XButton } from 'vux'
 
 export default {
   name: 'appr',
   data () {
     return {
       reason: '',
-      money: ''
-      // phone: '',
-      // city: '武汉',
-      // cities: ['武汉', '黄冈'],
-      // formHtml: '<input title="手机号">\n',
-      // comps: [
-      //   { 
-      //     'compName': 'XInput', 
-      //     'title': '手机号', 
-      //     'isType': 'china-mobile',
-      //     'required': 'required', 
-      //     'textAlign': 'right', 
-      //     'value': '15172323855'
-      //   }, 
-      //   { 
-      //     'compName': 'XInput', 
-      //     'title': '姓名', 
-      //     'required': 'required', 
-      //     'textAlign': 'right'
-      //   }, 
-      //   { 
-      //     'compName': 'Selector', 
-      //     'title': '城市', 
-      //     'options': ['武汉', '黄冈'], 
-      //     'value': '武汉', 
-      //     'required': 'required', 
-      //     'direction': 'rtl' 
-      //   },
-      //   { 
-      //     'compName': 'Checklist', 
-      //     'title': '技能', 
-      //     'labelPosition': 'left', 
-      //     'value': ['唱', '跳'], 
-      //     'options': ['唱', '跳', 'rap', '篮球', '嫖娼'] 
-      //   }
-      // ],
-      // apps: []
+      money: '',
+      annex_msg: '从云盘选择'
     }
   },
   created () {
-    // this.comps.forEach(comp => {
-    //   this.apps.push(require('./components/my-input'))
-    //   this.apps.push('XInput')
-    //   this.apps.push(comp)
-    // })
   },
   components: {
     XHeader,
     Group,
     XInput,
-    Selector,
-    Checklist,
-    Flow,
-    FlowState,
-    FlowLine,
-    Cell
+    Cell,
+    Flexbox,
+    FlexboxItem,
+    Card,
+    XButton
   }
 }
 </script>
 
 <style lang='less' scoped >
-  .file{
-    
+// 超过四个审批人的flexbox,改变他线的长度 
+.line::after{
+  height: 2.5rem !important;
+  top: -2rem !important;
+}
+// 修改附件input中样式
+.weui-cells .weui-cell:last-child {
+   /deep/.weui-cell__ft {
+     flex: 1.2;
+     text-align: left;
+   }
+  
+}
+.contanier{
+  padding-bottom: 1.204rem;
+}
+.appr_steps{
+  //  padding-bottom: 1.259rem;
+  .appr_items{
+    padding-top: .5rem;
+    overflow: visible;
+
+
+    .flexbox{
+      box-sizing: border-box;
+      position: relative;
+      padding: 0 .5rem .8rem;
+      // 第二个flexbox才西线
+      & +.flexbox::after{
+        display: block;
+        content: '';
+        position: absolute;
+        top: -1.3rem;
+        left: .75rem;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        height: 1.9rem;
+        width: .056rem;
+        background: #d8daec;
+
+
+      }
+      .vux-flexbox-item{
+        height: 1.628rem;
+        display: flex;
+        align-items: center;
+      }
+      img{
+        position: relative;
+        width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+      .level{
+        margin-left: .185rem;
+        font-size: .296rem;
+        color: #010728;
+      }
+      .flex-text{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+      
+        flex-wrap: wrap;
+        .appr_people{
+          margin-left: 20px;
+          img{
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+          } 
+        }
+      }
+    }
+
   }
+}
+.submit_btn{
+  position: fixed;
+  width: 100%;
+  height: 1.204rem;
+  left: 0;
+  bottom: 0;
  
+
+}
 </style>
