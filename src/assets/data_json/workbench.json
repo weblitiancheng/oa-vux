@@ -8,7 +8,7 @@
     {
         "bg_txt":"ERP其他事务",
         "bg_url":"https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/28.png",
-        "bg_link": "/appr_askforFree"
+        "bg_link": "/erp_others"
     },
     {
         "bg_txt":"ERP权限",
@@ -18,12 +18,12 @@
     {
         "bg_txt":"新建店铺",
         "bg_url":"https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/21.png",
-        "bg_link": "/appr_askforFree"
+        "bg_link": "/new_stroe"
     },
     {
         "bg_txt":"新建仓库",
         "bg_url": "https://ipasoncnwebsite.oss-cn-shanghai.aliyuncs.com/oa/images/logo/22.png",
-        "bg_link": "/appr_askforFree"
+        "bg_link": "/new_warehouse"
     },
     {
         "bg_txt":"新建ERP账号",

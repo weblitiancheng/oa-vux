@@ -12,25 +12,28 @@ export default {
 
 <style lang="less">
 @import '~vux/src/styles/reset.less';
+@import '~vux/src/styles/1px.less';
 
-
-html {
-  overflow-y: scroll;
-}
-
-// :root {
-//   overflow-y: auto;
-//   overflow-x: hidden;
+// html {
+//   overflow-y: scroll;
 // }
 
-// :root body {
-//   position: absolute;
-// }
 
-body {
-  width: 100%;
-  overflow: hidden;
-   background-color: #fbf9fe;
+html,body{
+	padding: 0;
+	margin: 0;
+	width: 100%;	
+	height: 100%;	
+	position: absolute;	
+	left: 0;top: 0;	
+	overflow: hidden;	
+  overflow-y: auto;
+  background-color: #fbf9fe;
 }
-
+::-webkit-scrollbar  
+{  
+	display: none!important;
+    width: 0px;  
+    height: 0px;  
+}
 </style>

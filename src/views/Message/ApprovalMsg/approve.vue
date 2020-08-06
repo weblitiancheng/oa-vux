@@ -2,8 +2,9 @@
 
 
     <div>
-      <x-header>审批处理</x-header>
+     
       <sticky>
+         <x-header>审批处理</x-header>
           <tab
               active-color = '#828abd' 
               bar-active-color = '#2c409c'
@@ -17,16 +18,18 @@
                   badge-label="999" 
                   @on-item-click="handler">代办</tab-item>
           </tab>
+          <load-more 
+            :tip="pullDownText" 
+            class="drop-down" 
+            v-if="pullDown"
+            style="color:#cababa"
+          > 
+           </load-more>
       </sticky>
       <div class="tab-items" v-show="tabIndex" >
         <!-- <p class="drop-down" v-if="pullDown">松手刷新数据...</p> -->
-        <load-more 
-          :tip="pullDownText" 
-          class="drop-down" 
-          v-if="pullDown"
-          style="color:#cababa"
-        > 
-        </load-more>
+
+       
         <div class="wrapper" ref='wrapper'>
           <div class="content">
             <div class="list-items">
@@ -117,17 +120,8 @@
           </div>
       
         </div>
-        
-      
       </div>
       <div class="tab-items" v-show='!tabIndex' >
-        <load-more 
-          :tip="pullDownText" 
-          class="drop-down" 
-          v-if="pullDown"
-          style="color:#cababa"
-        >
-        </load-more>
         <!-- <p class="drop-down" v-if="pullDown">松手刷新数据...</p> -->
         <div class="wrapperTwo" ref='wrapperTwo'>
           <div>
@@ -360,29 +354,33 @@ export default {
       idx === 0 ? this.tabIndex = true : this.tabIndex = false
       if (idx === 1) {
         // idx=1初始化scroll对象
-        this.scrollFn(this.$refs.wrapperTwo)
+        this.scrollFn(this.$refs.wrapperTwo, scroll)
       } else if (idx === 0) {
         // idx=0初始化scroll对象
-        this.scrollFn(this.$refs.wrapper)
+        this.scrollFn(this.$refs.wrapper, scroll)
       }
     },
-    scrollFn (ele) {
+    scrollFn (ele, scroll) {
       this.$nextTick(() => {
         this.scroll = new BScroll(ele, {
           click: true,
           scrollY: true,
-          probeType: 3
+          probeType: 2
         })
         this.scroll.on('scroll', (pos) => {
               // 如果下拉超过20px 就显示下拉刷新的文字
           pos.y > 20 ? this.pullDown = true : this.pullDown = false
           this.scroll.maxScrollY > pos.y + 10 ? this.pullUp = true : this.pullUp = false
+
+          console.log('执行')
         })
           // touchEnd（手指离开以后触发） 通过这个方法来监听下拉刷新
         this.scroll.on('touchEnd', (pos) => {
               // 下拉动作
           if (pos.y > 20) {
             console.log('下拉刷新成功')
+            this.pullDown = false
+          } else {
             this.pullDown = false
           }
               // 上拉加载 总高度>下拉的高度+10 触发加载更多
@@ -396,14 +394,17 @@ export default {
           }
           console.log(this.scroll.maxScrollY + '总距离----下拉的距离' + pos.y)
         })
-        console.log(this.scroll.maxScrollY)
+        this.scroll.refresh()
       })
     }
   },
   mounted () {
     // 页面初始化的时候，值初始化一个scroll对象
-    this.scrollFn(this.$refs.wrapper)
+    this.$nextTick(() => {
+      this.scrollFn(this.$refs.wrapper, scroll)
+    })
   }
+
 }
 </script>
 
@@ -475,10 +476,7 @@ export default {
     }
   }
 }
-// .ready_items:first-child{
-//   // background: #000;
 
-// }
 .ready_items{
   box-sizing: border-box;
   height: 3.296rem;
@@ -518,40 +516,6 @@ export default {
   }
 }
 
-
-
-  // .daiban{
-  //   margin-left: .343rem
-  // }
-
-  // .appr-msg{
-    // padding-top: .213rem;
-  //   img{
-      // width: 1.259rem;
-      // height: 1.259rem;
-      // padding-right: .648rem;
-      // vertical-align: middle;
-  //   }
-  //   span{
-  //     color: #1a1e4c;
-  //     font-size: 16px
-  //   }
-  // }
-  // .feedback{
-  //   padding-bottom: .278rem;
-  //   display: flex;
-  //   justify-content: flex-end;
-  //   .refuse,.agree{
-      
-  //     margin-right: .741rem;
-  //   }
-  //   .refuse{
-  //     color: #fb5151;
-  //   }
-  //   .agree{
-  //     color: #85d011
-  //   }
-  // }
  
 
 

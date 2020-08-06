@@ -8,6 +8,7 @@
  */
 
 const routers = [
+
   {
     path: '/',
     redirect: '/msg'
@@ -105,11 +106,11 @@ const routers = [
   {
     path: '/appr_askforfree',
     meta: {
-      title: '审批',
+      title: '请假',
       keepAlive: true,
       isLogin: true
     },
-    component: (resolve) => require(['@/views/Workbench/Approval/AskForFree/appr'], resolve)
+    component: (resolve) => require(['@/views/Workbench/Approval/AskForFree/forFree'], resolve)
   },
   {
     path: '/appr_annex',
@@ -119,6 +120,70 @@ const routers = [
       isLogin: true
     },
     component: (resolve) => require(['@/views/Workbench/Approval/AskForFree/annex'], resolve)
+  },
+  {
+    path: '/my_approval',
+    meta: {
+      title: '我审批的',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/My/Approval/my_approval'], resolve)
+  },
+  {
+    path: '/my_send',
+    meta: {
+      title: '我发起的',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/My/Approval/my_send_approval'], resolve)
+  },
+  {
+    path: '/my_cc',
+    meta: {
+      title: '我抄送的',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/My/Approval/my_cc'], resolve)
+  },
+  {
+    path: '/erp_others',
+    meta: {
+      title: 'EPR其他事务',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/Workbench/Approval/ERPOthers/others'], resolve)
+  },
+  {
+    path: '/new_warehouse',
+    meta: {
+      title: '新建仓库',
+      keepAlive: true,
+      isLogin: true
+    },
+    component: (resolve) => require(['@/views/Workbench/Approval/NewWarehouse/newWarehouse'], resolve)
+  },
+  {
+    path: '/new_stroe',
+    meta: {
+      title: '新建店铺',
+      isLogin: true,
+      keepAlive: true
+    },
+    component: (resolve) => require(['@/views/Workbench/Approval/NewStore/newStore'], resolve)
+  },
+  {
+    path: '/appr',
+    meta: {
+      title: '测试',
+      isLogin: true,
+      keepAlive: true
+    },
+    component: (resolve) => require(['@/views/Workbench/appr'], resolve)
   }
 ]
+
 export default routers

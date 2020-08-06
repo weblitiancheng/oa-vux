@@ -1,21 +1,29 @@
 <template>
+    
     <div style="overflow-x: hidden;">
+        <x-header>个人中心</x-header>
         <div class="message_box">
-            <img src="@/assets/logo.png" class="my_img">
+            <img src="../../assets/wximg.jpg" class="my_img">
             <div>
                 <h2 class="my_name">沈志雄</h2>
                 <p class="my_job">软件研发部</p>
+                
+            </div>
+            <div>
+                退出登录<span>></span>
             </div>
         </div>
         <p class="line"></p>
         <flexbox orient="vertical" :gutter="0">
             <flexbox-item v-for="(my_data) of myData" :key="my_data.my_txt">
-                <div class="my_lie">
-                    <img :src="my_data.my_img" class="my_pic8">
-                    <div class="my_lieRight">
-                    <p>{{my_data.my_txt}}</p>
-                    </div>
-                </div>
+                <router-link :to="my_data.my_url">
+                  <div class="my_lie">
+                      <img :src="my_data.my_img" class="my_pic8">
+                      <div class="my_lieRight">
+                      <p>{{my_data.my_txt}}</p>
+                      </div>
+                  </div>
+                </router-link>
             </flexbox-item>
         </flexbox>
       <Vtabbar></Vtabbar>
@@ -24,7 +32,7 @@
 
 
 <script>
-  import {Grid, GridItem, GroupTitle, Flexbox, FlexboxItem, Divider} from 'vux'
+  import {Grid, GridItem, GroupTitle, Flexbox, FlexboxItem, Divider, XHeader} from 'vux'
   import Vtabbar from '@/views/components/tabbar'
   var myData = require('@/assets/data_json/my.json')
   export default {
@@ -42,13 +50,14 @@
       Vtabbar,
       Grid,
       GridItem,
-      GroupTitle
+      GroupTitle,
+      XHeader
     }
   }
 </script>
 
 
-<style scoped>
+<style lang="less" scope>
     *{margin: 0;padding: 0;}
     .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
     .clearfloat{zoom:1}
@@ -58,6 +67,15 @@
         align-items: center;
         padding: 0.4rem 0rem;
         margin: 0 auto;
+    }
+    .message_box div+div{
+      flex: 1;
+      text-align: right;
+      margin-right: .667rem ;
+      color: #0f1528;
+      span{
+        margin-left: .1rem;
+      }
     }
     .my_img{
         width: 2rem;
